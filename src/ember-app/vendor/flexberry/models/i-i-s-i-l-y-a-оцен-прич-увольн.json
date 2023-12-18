@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISILYAОценПричУвольн",
+  "modelName": "i-i-s-i-l-y-a-оцен-прич-увольн",
+  "className": "ОценПричУвольн",
+  "nameSpace": "IIS.ILYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "неУдовл",
+      "type": "i-i-s-i-l-y-a-факторы",
+      "flexberryType": "Факторы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "удовл",
+      "type": "i-i-s-i-l-y-a-факторы",
+      "flexberryType": "Факторы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "анкеты",
+      "relatedTo": "i-i-s-i-l-y-a-анкеты",
+      "inverse": "оценПричУвольн"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОценПричУвольнE",
+      "modelName": "i-i-s-i-l-y-a-оцен-прич-увольн",
+      "attrs": [
+        {
+          "name": "неУдовл",
+          "caption": "1-5 (не удовлетворен)",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "удовл",
+          "caption": "6-10 (удовлетворен)",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

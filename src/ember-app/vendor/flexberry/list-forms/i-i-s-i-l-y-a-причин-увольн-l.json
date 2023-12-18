@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-l-y-a-причин-увольн-e",
+  "editForm": "i-i-s-i-l-y-a-причин-увольн-e",
+  "external": false,
+  "caption": "Причин увольн",
+  "name": "IISILYAПричинУвольнL",
+  "className": "ПричинУвольнL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-l-y-a-причин-увольн",
+      "modelProjection": "ПричинУвольнL"
+    }
+  ]
+}

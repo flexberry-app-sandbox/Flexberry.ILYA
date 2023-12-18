@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-l-y-a-анкеты-e",
+  "editForm": "i-i-s-i-l-y-a-анкеты-e",
+  "external": false,
+  "caption": "Анкеты",
+  "name": "IISILYAАнкетыL",
+  "className": "АнкетыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-l-y-a-анкеты",
+      "modelProjection": "АнкетыL"
+    }
+  ]
+}

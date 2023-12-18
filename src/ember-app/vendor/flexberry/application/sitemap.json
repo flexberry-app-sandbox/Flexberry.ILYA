@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "ILYA",
+  "applicationTitle": "ILYA",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-l-y-a",
+      "caption": "ILYA",
+      "title": "ILYA",
+      "children": [
+        {
+          "link": "i-i-s-i-l-y-a-специалист-l",
+          "menuName": null,
+          "caption": "Специалист",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-l-y-a-анкеты-l",
+          "menuName": null,
+          "caption": "Анкеты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-l-y-a-причин-увольн-l",
+          "menuName": null,
+          "caption": "Причин увольн",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

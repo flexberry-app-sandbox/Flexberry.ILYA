@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISILYAПричинУвольн",
+  "modelName": "i-i-s-i-l-y-a-причин-увольн",
+  "className": "ПричинУвольн",
+  "nameSpace": "IIS.ILYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаЗаполн",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оценПричУвольн",
+      "relatedTo": "i-i-s-i-l-y-a-оцен-прич-увольн",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "специалист",
+      "relatedTo": "i-i-s-i-l-y-a-специалист",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "рекомендации",
+      "relatedTo": "i-i-s-i-l-y-a-рекомендац",
+      "inverse": "причинУвольн"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПричинУвольнE",
+      "modelName": "i-i-s-i-l-y-a-причин-увольн",
+      "attrs": [
+        {
+          "name": "датаЗаполн",
+          "caption": "Дата заполнения",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "РекомендацE",
+          "caption": "Рекомендации",
+          "name": "рекомендации",
+          "relatedTo": "i-i-s-i-l-y-a-рекомендац",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПричинУвольнL",
+      "modelName": "i-i-s-i-l-y-a-причин-увольн",
+      "attrs": [
+        {
+          "name": "датаЗаполн",
+          "caption": "Дата заполн",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
